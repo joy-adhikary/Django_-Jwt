@@ -1,6 +1,5 @@
-from django.urls import path
-from main.views import *
+from django.urls import path,include
 
 urlpatterns = [
-    path('',Joy.as_view())
+    path('',include('main.urls'))
 ]
